@@ -1,0 +1,95 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "VerSec",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#defns"
+		},
+		{
+			"include": "#params"
+		},
+		{
+			"include": "#invocations"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"types": {
+			"patterns": [
+				{
+					"name": "entity.name.type.versec",
+					"match": "(#\\w+)"
+				},
+				{
+					"name": "variable.parameter.versec",
+					"match": "(_\\w*)"
+				}
+			]
+		},
+		"defns": {
+			"begin": "^((_|#)?\\w+)",
+			"beginCaptures": {
+				"0": {
+					"name": "entity.name.function.versec"
+				}
+			},
+			"end": ":"
+		},
+		"params": {
+			"begin": "\\b(\\w+):",
+			"beginCaptures": {
+				"0": {
+					"name": "variable.parameter.versec"
+				}
+			},
+			"end": "\\s"
+		},
+		"invocations": {
+			"patterns": [
+				{
+					"name": "entity.name.function.versec",
+					"match": "(\\w+\\(\\))"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.versec",
+					"match": "(//).*$\\n?"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.versec",
+					"match": "(&|<=|/|\\|)"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.versec",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.versec",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.trust"
+}

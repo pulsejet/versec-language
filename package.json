@@ -1,0 +1,30 @@
+{
+  "name": "versec-language",
+  "displayName": "VerSec Language",
+  "description": "Support for the VerSec trust language used by DeftT",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": "https://github.com/pulsejet/versec-language",
+  "contributes": {
+    "languages": [{
+      "id": "versec",
+      "aliases": ["VerSec", "versec"],
+      "extensions": [".trust",".rules"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./icon.png",
+        "dark": "./icon.png"
+      }
+    }],
+    "grammars": [{
+      "language": "versec",
+      "scopeName": "source.trust",
+      "path": "./syntaxes/versec.tmLanguage.json"
+    }]
+  }
+}
