@@ -4,6 +4,7 @@
   "publisher": "pulsejet",
   "description": "Support for the VerSec trust language used by DeftT",
   "version": "0.0.1",
+  "icon": "./logo.png",
   "engines": {
     "vscode": "^1.81.0"
   },
