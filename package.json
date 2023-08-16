@@ -1,6 +1,7 @@
 {
   "name": "versec-language",
   "displayName": "VerSec Language",
+  "publisher": "pulsejet",
   "description": "Support for the VerSec trust language used by DeftT",
   "version": "0.0.1",
   "engines": {
