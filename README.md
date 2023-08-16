@@ -2,7 +2,7 @@
 
 Syntax highlighting for the VerSec security language
 
-![Syntax highlighting](images/syntax.png)
+![Syntax highlighting](https://raw.githubusercontent.com/pulsejet/versec-language/main/images/syntax.png)
 
 ## Credits
 
