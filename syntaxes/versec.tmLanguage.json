@@ -28,6 +28,10 @@
 		"types": {
 			"patterns": [
 				{
+					"name": "keyword.control.versec",
+					"match": "(#(msgsValidator|certValidator|pduValidator|pubPrefix|chainInfo))"
+				},
+				{
 					"name": "entity.name.type.versec",
 					"match": "(#\\w+)"
 				},
