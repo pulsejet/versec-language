@@ -42,13 +42,13 @@
 			]
 		},
 		"defns": {
-			"begin": "^((_|#)?\\w+)",
+			"begin": "^((_|#)?\\w+):",
 			"beginCaptures": {
 				"0": {
 					"name": "entity.name.function.versec"
 				}
 			},
-			"end": ":"
+			"end": "\\s"
 		},
 		"params": {
 			"begin": "\\b(\\w+):",
