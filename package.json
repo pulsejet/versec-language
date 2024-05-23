@@ -3,7 +3,7 @@
   "displayName": "VerSec Language",
   "publisher": "pulsejet",
   "description": "Support for the VerSec trust language used by DeftT",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "icon": "./logo.png",
   "engines": {
     "vscode": "^1.81.0"
